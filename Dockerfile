@@ -4,7 +4,7 @@ MAINTAINER TheZero <io@thezero.org>
 # Based on https://github.com/jfrazelle/dockerfiles/tree/master/tor-relay
 
 RUN apk --no-cache add \
-	bash
+	bash \
 	tor
 
 # default port to used for incoming Tor connections
