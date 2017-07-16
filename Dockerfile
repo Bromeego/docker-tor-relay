@@ -3,12 +3,8 @@ MAINTAINER TheZero <io@thezero.org>
 
 # Based on https://github.com/jfrazelle/dockerfiles/tree/master/tor-relay
 
-# Note: Tor is only in testing repo -> http://pkgs.alpinelinux.org/packages?package=emacs&repo=all&arch=x86_64
-RUN apk update && apk add \
-	bash \
-	tor \
-	--update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
-	&& rm -rf /var/cache/apk/*
+RUN apk --no-cache add \
+	tor
 
 # default port to used for incoming Tor connections
 # can be changed by changing 'ORPort' in torrc
