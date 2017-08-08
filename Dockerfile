@@ -5,7 +5,7 @@ MAINTAINER TheZero <io@thezero.org>
 
 RUN apk --no-cache add \
 	bash \
-	tor
+	tor@edge
 
 # default port to used for incoming Tor connections
 # can be changed by changing 'ORPort' in torrc
