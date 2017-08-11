@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:edge
 MAINTAINER TheZero <io@thezero.org>
 
 # Based on https://github.com/jfrazelle/dockerfiles/tree/master/tor-relay
